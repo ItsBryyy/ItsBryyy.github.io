@@ -3,30 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mobile Homepage</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Background Video Container -->
+    <div class="video-container">
+        <video id="background-video" autoplay muted loop></video>
+    </div>
 
-    <main>
-        <h1>Welcome to the Homepage</h1>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#profile" class="nav-link">Profile</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h1>Welcome to the Mobile Homepage</h1>
+        <p>Choose a background:</p>
         <div class="button-container">
-            <button>Button 1</button>
-            <button>Button 2</button>
-            <button>Button 3</button>
-            <button>Button 4</button>
-            <button>Button 5</button>
+            <button onclick="playVideo('video1.mp4')">Video 1</button>
+            <button onclick="playVideo('video2.mp4')">Video 2</button>
+            <button onclick="playVideo('video3.mp4')">Video 3</button>
+            <button onclick="playVideo('video4.mp4')">Video 4</button>
+            <button onclick="playVideo('video5.mp4')">Video 5</button>
         </div>
-    </main>
+    </div>
+
+    <!-- JavaScript to handle video switching -->
+    <script>
+        function playVideo(videoSrc) {
+            const video = document.getElementById("background-video");
+            video.src = videoSrc;
+            video.play();
+        }
+    </script>
 </body>
 </html>
-
