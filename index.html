@@ -1,67 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+    
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi Its Bry</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            margin-bottom: 20px;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        .projects {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .projects a {
-            text-decoration: none;
-            color: #333;
-            background-color: #fff;
-            padding: 10px 20px;
-            margin: 10px;
-            width: 200px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-        }
-
-        .projects a:hover {
-            background-color: #007BFF;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="banner">
+        <div class="navbar">
 
-<header>
-    <h1>Hi Its Bry</h1>
-</header>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
 
-<section class="projects">
-    <h2>Project Links</h2>
-    <a href="project1.html">Project 1</a>
-    <a href="project2.html">Project 2</a>
-    <a href="project3.html">Project 3</a>
-    <a href="project4.html">Project 4</a>
-    <a href="project5.html">Project 5</a>
-</section>
+        </div>
+        <div class="content">
+            <h1>Hi Its Bry</h1>
+            <p>WELCOME TO MY HOMEPAGE</p>
+            <div> <button type="button"><span></span>PROJECT 1</button> 
+                  <button type="button"><span></span>PROJECT 2</button> 
+                  <button type="button"><span></span>PROJECT 3</button>
+                  <button type="button"><span></span>PROJECT 4</button>
+                  <button type="button"><span></span>PROJECT 5</button>
+            </div>
+        </div>
+    </div>
 
+    <video autoplay muted loop playsinline class="video-bg">
+        <source src="sea.mp4" type="video/mp4">
+
+    </video>
 </body>
+
 </html>
