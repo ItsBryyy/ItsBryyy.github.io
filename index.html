@@ -3,159 +3,178 @@
 <head>
     <title>Hi Its Bry</title>
     <link rel="stylesheet">
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
 
-.banner {
-    width: 100%;
-    height: 100vh;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.7 5)), url(Untitled_presentation.png);
-    background-size: cover;
-    background-position: center;
-}
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(Untitled_presentation.png);
+            background-size: cover;
+            background-position: center;
+        }
 
-.navbar {
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+        .navbar {
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-.video-bg {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    object-fit: cover;
-    filter: brightness(60%);
-}
+        .video-bg {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            filter: brightness(60%);
+        }
 
-.navbar ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-    margin: 0 20px;
-    position: relative;
-}
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
 
-.navbar ul li a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-}
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
 
-.navbar ul li::after {
-    content: '';
-    height: 3px;
-    width: 0%;
-    background: #009688;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-}
+        .navbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 0%;
+            background: #009688;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
 
-.navbar ul li:hover::after {
-    width: 100%;
-}
+        .navbar ul li:hover::after {
+            width: 100%;
+        }
 
-.content {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: #fff;
-}
+        .content {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: #fff;
+        }
 
-.content h1 {
-    font-size: 120px;
-    margin-top: 80px;
-}
+        .content h1 {
+            font-size: 120px;
+            margin-top: 80px;
+        }
 
-.content p {
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 25px;
-}
+        .content p {
+            margin: 20px auto;
+            font-weight: 100;
+            line-height: 25px;
+        }
 
-button {
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20 px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid #e0dfe9;
-    background: transparent;
-    color: #977868;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
+        button {
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #e0dfe9;
+            background: transparent;
+            color: #977868;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
 
-span {
-    background: #977868;
-    height: 100%;
-    width: 0%;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
-}
+        span {
+            background: #977868;
+            height: 100%;
+            width: 0%;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
 
-button:hover span {
-    width: 100%;
-}
+        button:hover span {
+            width: 100%;
+        }
 
-button:hover {
-    border: none;
-}
-</style>
+        button:hover {
+            border: none;
+        }
+
+        /* Profile section styling */
+        .profile-section {
+            margin-top: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .profile-section img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #009688;
+        }
+
+        .profile-section p {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
     <div class="banner">
         <div class="navbar">
-
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
+                <li><a href="#profile">Profile</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-
         </div>
+
         <div class="content">
             <h1>Hi Its Bry</h1>
             <p>HELLO WELCOME TO MY HOMEPAGE</p>
             <div>
-                  <button type="button"><span></span>PROJECT 1</button> 
-                  <button type="button"><span></span>PROJECT 2</button> 
-                  <button type="button"><span></span>PROJECT 3</button>
-                  <button type="button"><span></span>PROJECT 4</button>                   
-                  <button type="button"><span></span>PROJECT 5</button>
+                <button type="button"><span></span>PROJECT 1</button>
+                <button type="button"><span></span>PROJECT 2</button>
+                <button type="button"><span></span>PROJECT 3</button>
+                <button type="button"><span></span>PROJECT 4</button>
+                <button type="button"><span></span>PROJECT 5</button>
             </div>
         </div>
     </div>
 
+    <!-- Profile Section -->
+    <div id="profile" class="profile-section">
+        <img src="profile_picture.jpg" alt="Bry's Profile Picture">
+        <p>Hello! I'm Bry, a web enthusiast and creative developer.</p>
+    </div>
+
     <video autoplay muted loop playsinline class="video-bg">
         <source src="sea.mp4" type="video/mp4">
-
     </video>
 </body>
 
