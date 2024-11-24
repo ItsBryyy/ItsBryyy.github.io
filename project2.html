@@ -9,6 +9,13 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <style>
+    body {
+      background-image: url('https://cdna.artstation.com/p/assets/images/images/051/761/344/large/gloomy-tft-final-gloomyt.jpg?1658174252');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
     .imgContainer {
       width: 200px;
       height: 200px;
@@ -28,6 +35,7 @@
       margin: 10px auto;
       border-radius: 20px;
       overflow: hidden;
+      background-color: lightgray;
     }
 
     #tacticiansContainer {
@@ -38,6 +46,7 @@
 
     .page-title {
       text-align: center;
+      color: white;
       font-size: 2.5rem;
       font-weight: bold;
       margin-bottom: 20px;
@@ -46,7 +55,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container ">
     <div class="row mt-5">
       <div class="col-12">
         <h1 class="page-title">League of Legends TFT Tacticians</h1>
@@ -55,9 +64,10 @@
     <div class="row">
       <div class="col p-5">
         <div class="d-flex">
-          <input type="text" class="p-3 form-control" placeholder="Search"
-            style="border-radius: 100px 0px 0px 100px" id="searchBar">
-          <button class="btn btn-secondary" style="border-radius: 0px 100px 100px 0px" onclick="searchTacticians()">Search</button>
+          <input type="text" class="p-3 form-control" placeholder="Search" style="border-radius: 100px 0px 0px 100px"
+            id="searchBar">
+          <button class="btn btn-secondary" style="border-radius: 0px 100px 100px 0px"
+            onclick="searchTacticians()">Search</button>
         </div>
       </div>
     </div>
@@ -70,7 +80,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN6jIeHz" crossorigin="anonymous">
-  </script>
+    </script>
 
   <script>
     const tacticiansContainer = document.getElementById("tacticiansContainer");
